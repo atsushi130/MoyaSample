@@ -10,7 +10,7 @@ import Moya
 
 protocol SampleTargetType: TargetType {}
 extension SampleTargetType {
-    var baseURL: URL { return URL(string: "")! }
+    var baseURL: URL { return URL(string: "http://localhost:3000")! }
     var headers: [String: String]? { return nil }
     var sampleData: Data { return Data() }
 }
