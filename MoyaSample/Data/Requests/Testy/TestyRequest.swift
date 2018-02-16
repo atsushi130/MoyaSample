@@ -13,7 +13,7 @@ enum TestyRequest {
 }
 
 extension TestyRequest: SampleTargetType {
-    var path: String { return "" }
+    var path: String { return "/testies" }
     var method: Method { return .get }
     var task: Task { return .requestPlain }
 }
