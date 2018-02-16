@@ -17,8 +17,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        TestyRepository.shared.testy.subscribe(onNext: { testy in
-            print(testy)
+        TestyRepository.shared.testies.subscribe(onNext: { testies in
+            print(testies)
+        }, onError: { error in
+            print(error)
         }).disposed(by: self.disposeBag)
     }
 
