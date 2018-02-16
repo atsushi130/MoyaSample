@@ -1,0 +1,18 @@
+{
+  "testies": [
+    {
+      "testy_id": 1,
+      "testy_object": {
+        "id": 1,
+        "name": "testy1"
+      }
+    },
+    {
+      "testy_id": 2,
+      "testy_object": {
+        "id": 2,
+        "name": "testy2"
+      }
+    }
+  ]
+}
