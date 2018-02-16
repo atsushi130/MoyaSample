@@ -31,6 +31,7 @@
 		0D2E052A203504DE00F5AB3C /* TestyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E0529203504DE00F5AB3C /* TestyEntity.swift */; };
 		0D2E052C203504F600F5AB3C /* TestyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E052B203504F600F5AB3C /* TestyRepository.swift */; };
 		0D2E052E2035052C00F5AB3C /* Testy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E052D2035052C00F5AB3C /* Testy.swift */; };
+		0D2E053020365A6100F5AB3C /* SnakeCaseCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E052F20365A6100F5AB3C /* SnakeCaseCodingKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		0D2E0529203504DE00F5AB3C /* TestyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestyEntity.swift; sourceTree = "<group>"; };
 		0D2E052B203504F600F5AB3C /* TestyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestyRepository.swift; sourceTree = "<group>"; };
 		0D2E052D2035052C00F5AB3C /* Testy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testy.swift; sourceTree = "<group>"; };
+		0D2E052F20365A6100F5AB3C /* SnakeCaseCodingKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeCaseCodingKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				0D2E047E2034713B00F5AB3C /* Assets.xcassets */,
 				0D2E04802034713B00F5AB3C /* LaunchScreen.storyboard */,
 				0D2E04832034713B00F5AB3C /* Info.plist */,
+				0D2E052F20365A6100F5AB3C /* SnakeCaseCodingKey.swift */,
 			);
 			path = MoyaSample;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				0D2E04782034713B00F5AB3C /* AppDelegate.swift in Sources */,
 				0D2E052A203504DE00F5AB3C /* TestyEntity.swift in Sources */,
 				0D2E0525203501F000F5AB3C /* SampleTargetType.swift in Sources */,
+				0D2E053020365A6100F5AB3C /* SnakeCaseCodingKey.swift in Sources */,
 				0D2E0528203503AE00F5AB3C /* TestyRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
