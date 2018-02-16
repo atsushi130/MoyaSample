@@ -17,7 +17,11 @@ struct TestyRepository {
     
     private init() {}
 
-    var testy: Observable<Testy> {
-        return self.provider.rx.request(.testy).map(TestyEntity.self).map(Testy.init).asObservable()
+    var testies: Observable<[Testy]> {
+        return self.provider.rx.request(.testy).map([TestyEntity].self).asObservable().map { testies in
+            return testies.map { testy in
+                return Testy(entity: testy)
+            }
+        }
     }
 }
