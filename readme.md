@@ -8,13 +8,13 @@
 ❯ git clone https://github.com/atsushi130/MoyaSample.git
 ❯ cd MoyaSample
 ❯ carthage bootstrap --platform iOS
-
+❯ json-server --watch db.json
 ```
 
 ## Sample Code
 ```swift
-TestyRepository.shared.testy.subscribe(onNext: { testy in
-    print(testy)
+TestyRepository.shared.testies.subscribe(onNext: { testies in
+    print(testies)
 }).disposed(by: self.disposeBag)
 ```
 
