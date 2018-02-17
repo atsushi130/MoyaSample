@@ -17,11 +17,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        TestyRepository.shared.testies.subscribe(onNext: { testies in
-            print(testies)
-        }, onError: { error in
-            print(error)
-        }).disposed(by: self.disposeBag)
+        TestyRepository.shared.testies
+            .subscribe(onNext: { testies in
+                print(testies)
+            }, onError: { error in
+                print(error)
+            }).disposed(by: self.disposeBag)
+        
+        let entity = TestyEntity(testyId: 1)
+        TestyRepository.shared.register(testy: entity)
+            .subscribe(onNext: { _ in
+                print("Post request success")
+            }, onError: { error in
+                print(error)
+            }).disposed(by: self.disposeBag)
     }
 
     override func didReceiveMemoryWarning() {
