@@ -10,10 +10,34 @@ import Moya
 
 enum TestyRequest {
     case testy
+    case register(testy: TestyEntity)
 }
 
 extension TestyRequest: SampleTargetType {
+    
     var path: String { return "/testies" }
-    var method: Method { return .get }
-    var task: Task { return .requestPlain }
+    
+    var method: Method {
+        switch self {
+        case .testy: return .get
+        case .register(_): return .post
+        }
+    }
+    
+    var parameters: [String: Any]? {
+        switch self {
+        case .testy: return nil
+        case .register(let testy): return ["id": testy.testyId]
+        }
+    }
+    
+    
+    var task: Task {
+        switch self {
+        case .testy: return .requestPlain
+        case .register(_):
+            let parameters = self.parameters ?? [:]
+            return .requestParameters(parameters: parameters, encoding: JSONEncoding.default)
+        }
+    }
 }
