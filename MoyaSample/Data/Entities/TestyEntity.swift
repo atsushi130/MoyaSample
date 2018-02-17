@@ -10,6 +10,11 @@ struct TestyEntity: Decodable {
     let testyId: Int
     let testyObejct: NestTestyEntity?
     
+    init(testyId: Int, testyObject: NestTestyEntity? = nil) {
+        self.testyId     = testyId
+        self.testyObejct = testyObject
+    }
+    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: RootKeys.self)
         self.testyId     = try values.decode(Int.self, forKey: .testyId)
