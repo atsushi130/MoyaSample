@@ -24,4 +24,8 @@ struct TestyRepository {
             }
         }
     }
+    
+    func register(testy: TestyEntity) -> Observable<Response> {
+        return self.provider.rx.request(.register(testy: testy)).asObservable()
+    }
 }
