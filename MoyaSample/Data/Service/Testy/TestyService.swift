@@ -12,7 +12,7 @@ import RxSwift
 
 extension SampleApi {
     
-    struct Testy: SampleService {
+    struct Testy: Service {
         
         // Singleton
         static let shared = SampleApi.Testy()
@@ -22,7 +22,7 @@ extension SampleApi {
         let provider = MoyaProvider<SampleApi.Testy.Endpoint>()
         
         // MARK: Endpoint
-        enum Endpoint: SampleTargetType {
+        enum Endpoint: EndpointProtocol {
             case testy
             case register(testy: TestyEntity)
         }
