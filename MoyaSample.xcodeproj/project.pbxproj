@@ -29,7 +29,6 @@
 		0D2E0525203501F000F5AB3C /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E0524203501F000F5AB3C /* EndpointProtocol.swift */; };
 		0D2E0528203503AE00F5AB3C /* TestyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E0527203503AE00F5AB3C /* TestyService.swift */; };
 		0D2E052A203504DE00F5AB3C /* TestyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E0529203504DE00F5AB3C /* TestyEntity.swift */; };
-		0D2E052C203504F600F5AB3C /* TestyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E052B203504F600F5AB3C /* TestyRepository.swift */; };
 		0D2E052E2035052C00F5AB3C /* Testy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E052D2035052C00F5AB3C /* Testy.swift */; };
 		0D2E053020365A6100F5AB3C /* SnakeCaseCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E052F20365A6100F5AB3C /* SnakeCaseCodingKey.swift */; };
 		0D2E0532203999A900F5AB3C /* SampleApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E0531203999A900F5AB3C /* SampleApi.swift */; };
@@ -94,7 +93,6 @@
 		0D2E0524203501F000F5AB3C /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
 		0D2E0527203503AE00F5AB3C /* TestyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestyService.swift; sourceTree = "<group>"; };
 		0D2E0529203504DE00F5AB3C /* TestyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestyEntity.swift; sourceTree = "<group>"; };
-		0D2E052B203504F600F5AB3C /* TestyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestyRepository.swift; sourceTree = "<group>"; };
 		0D2E052D2035052C00F5AB3C /* Testy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testy.swift; sourceTree = "<group>"; };
 		0D2E052F20365A6100F5AB3C /* SnakeCaseCodingKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeCaseCodingKey.swift; sourceTree = "<group>"; };
 		0D2E0531203999A900F5AB3C /* SampleApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApi.swift; sourceTree = "<group>"; };
@@ -191,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				0D2E050F2035018100F5AB3C /* Models */,
-				0D2E050E2035017000F5AB3C /* Repositories */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -222,14 +219,6 @@
 				0D2E0524203501F000F5AB3C /* EndpointProtocol.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		0D2E050E2035017000F5AB3C /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				0D2E052B203504F600F5AB3C /* TestyRepository.swift */,
-			);
-			path = Repositories;
 			sourceTree = "<group>";
 		};
 		0D2E050F2035018100F5AB3C /* Models */ = {
@@ -398,7 +387,6 @@
 			files = (
 				0D2E0532203999A900F5AB3C /* SampleApi.swift in Sources */,
 				0D2E047A2034713B00F5AB3C /* ViewController.swift in Sources */,
-				0D2E052C203504F600F5AB3C /* TestyRepository.swift in Sources */,
 				0D2E052E2035052C00F5AB3C /* Testy.swift in Sources */,
 				0D2E04782034713B00F5AB3C /* AppDelegate.swift in Sources */,
 				0D2E052A203504DE00F5AB3C /* TestyEntity.swift in Sources */,
