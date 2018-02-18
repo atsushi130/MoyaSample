@@ -6,4 +6,9 @@
 //  Copyright © 2018年 Atsushi Miyake. All rights reserved.
 //
 
-import Foundation
+import Moya
+
+protocol Service {
+    associatedtype Endpoint: EndpointProtocol
+    var provider: MoyaProvider<Endpoint> { get }
+}
