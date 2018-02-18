@@ -13,9 +13,12 @@
 
 ## Sample Code
 ```swift
-TestyRepository.shared.testies.subscribe(onNext: { testies in
-    print(testies)
-}).disposed(by: self.disposeBag)
+SampleApi.Testy.shared.fetch()
+    .subscribe(onNext: { testies in
+        print(testies)
+    }, onError: { error in
+        print(error)
+    }).disposed(by: self.disposeBag)
 ```
 
 ## License
