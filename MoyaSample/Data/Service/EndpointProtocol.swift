@@ -8,9 +8,9 @@
 
 import Moya
 
-protocol SampleTargetType: TargetType {}
+protocol EndpointProtocol: TargetType {}
 
-extension SampleTargetType {
+extension EndpointProtocol {
 
     var baseURL: URL {
         return URL(string: "http://localhost:3000")!
