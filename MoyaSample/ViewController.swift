@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        TestyRepository.shared.testies
+        SampleApi.Testy.shared.fetch()
             .subscribe(onNext: { testies in
                 print(testies)
             }, onError: { error in
@@ -25,7 +25,8 @@ class ViewController: UIViewController {
             }).disposed(by: self.disposeBag)
         
         let entity = TestyEntity(testyId: 1)
-        TestyRepository.shared.register(testy: entity)
+
+        SampleApi.Testy.shared.register(entity)
             .subscribe(onNext: { _ in
                 print("Post request success")
             }, onError: { error in
