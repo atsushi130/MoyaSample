@@ -13,7 +13,7 @@ import Moya
 struct TestyRepository {
     
     static let shared    = TestyRepository()
-    private let provider = MoyaProvider<TestyRequest>()
+    private let provider = MoyaProvider<SampleApi.Testy.Endpoint>()
     
     private init() {}
 
