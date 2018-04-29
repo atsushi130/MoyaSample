@@ -69,8 +69,7 @@ extension SampleApi.Testy {
         }
     }
     
-    // FIXME: - Observable<Moya.Response>
-    func register(_ testy: TestyEntity) -> Observable<Response> {
-        return self.provider.rx.request(.register(testy: testy)).asObservable()
+    func register(_ testy: TestyEntity) -> Observable<Void> {
+        return self.provider.rx.request(.register(testy: testy)).asObservable().discarded
     }
 }
