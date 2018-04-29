@@ -33,6 +33,7 @@
 		0D2E053020365A6100F5AB3C /* SnakeCaseCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E052F20365A6100F5AB3C /* SnakeCaseCodingKey.swift */; };
 		0D2E0532203999A900F5AB3C /* SampleApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E0531203999A900F5AB3C /* SampleApi.swift */; };
 		0D2E05342039AB8800F5AB3C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E05332039AB8800F5AB3C /* Service.swift */; };
+		D7BA1A29C198439CC321B5AE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BA1AD9B31BC7474B061C5F /* Error.swift */; };
 		D7BA1B294539EA7B1D636396 /* Observable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BA1F5ABD2D40C83C383D71 /* Observable+.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		0D2E052F20365A6100F5AB3C /* SnakeCaseCodingKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeCaseCodingKey.swift; sourceTree = "<group>"; };
 		0D2E0531203999A900F5AB3C /* SampleApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApi.swift; sourceTree = "<group>"; };
 		0D2E05332039AB8800F5AB3C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		D7BA1AD9B31BC7474B061C5F /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		D7BA1F5ABD2D40C83C383D71 /* Observable+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -249,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				0D2E0527203503AE00F5AB3C /* TestyService.swift */,
+				D7BA1AD9B31BC7474B061C5F /* Error.swift */,
 			);
 			path = Testy;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				0D2E0528203503AE00F5AB3C /* TestyService.swift in Sources */,
 				0D2E05342039AB8800F5AB3C /* Service.swift in Sources */,
 				D7BA1B294539EA7B1D636396 /* Observable+.swift in Sources */,
+				D7BA1A29C198439CC321B5AE /* Error.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
