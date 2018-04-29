@@ -70,6 +70,6 @@ extension SampleApi.Testy {
     }
     
     func register(_ testy: TestyEntity) -> Observable<Void> {
-        return self.provider.rx.request(.register(testy: testy)).asObservable().discarded
+        return self.provider.rx.request(.register(testy: testy)).defaultSetting().discarded
     }
 }
